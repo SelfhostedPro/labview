@@ -1,5 +1,5 @@
 {
-  "name": "yacht",
+  "name": "labview",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,10 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "SelfhostedPro",
-  "license": "ISC",
-  "dependencies": {
-    "@microsoft/cfp-template": "^1.0.0-alpha.6",
-    "@microsoft/fast-cli": "^1.0.0-alpha.6"
-  }
+  "author": "",
+  "license": "ISC"
 }

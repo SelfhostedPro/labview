@@ -1,10 +1,10 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import LVButton from "./LVButton";
+import LVInput from "./LVInput";
 
 const meta = {
-  title: "LVButton",
-  component: LVButton,
+  title: "LVInput",
+  component: LVInput,
   parameters: {
     layout: "centered",
   },
@@ -44,7 +44,6 @@ const meta = {
       control: "select",
       options: ["none", "compact", "normal", "relaxed"],
     },
-    children: { control: "text" },
   },
   args: {
     variant: "default",
@@ -59,29 +58,32 @@ const meta = {
       color: "primary",
     },
     spacing: "normal",
-    children: "Button Label",
   },
-} satisfies Meta<typeof LVButton & { label: React.ReactNode }>;
+} satisfies Meta<typeof LVInput>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 const Template: Story = {
-  render: ({ children, ...args }) => <LVButton {...args}>{children}</LVButton>,
+  render: ({ ...args }) => <LVInput {...args}></LVInput>,
 };
 
 export const Default: Story = {
   ...Template,
-  args: {
-    children: "Button",
-  },
+  args: {},
 };
 
 export const Secondary: Story = {
   ...Template,
   args: {
     color: "secondary",
-    children: "Button",
+  },
+};
+
+export const Accent: Story = {
+  ...Template,
+  args: {
+    color: "accent",
   },
 };
 
@@ -89,7 +91,6 @@ export const Large: Story = {
   ...Template,
   args: {
     size: "large",
-    children: "Button",
   },
 };
 
@@ -97,6 +98,5 @@ export const Small: Story = {
   ...Template,
   args: {
     size: "small",
-    children: "Button",
   },
 };

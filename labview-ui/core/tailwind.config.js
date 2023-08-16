@@ -1,11 +1,11 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+// tailwind.config.js
+module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        "primary-content": "#e0eaed",
-        primary: {
+        'primary-content': "#e0eaed",
+        'primary': {
           50: "#f3f7f8",
           100: "#e0eaed",
           200: "#c4d8dd",
@@ -19,8 +19,8 @@ export default {
           900: "#313f48",
           950: "#1d282f",
         },
-        "secondary-content": "#dfe8e2",
-        secondary: {
+        'secondary-content': "#dfe8e2",
+        'secondary': {
           50: "#f5f8f6",
           100: "#dfe8e2",
           200: "#bfd0c5",
@@ -34,8 +34,8 @@ export default {
           900: "#2b3631",
           950: "#161d1a",
         },
-        "accent-content": "#dbece9",
-        accent: {
+        'accent-content': "#dbece9",
+        'accent': {
           50: "#f4f9f8",
           100: "#dbece9",
           200: "#b7d8d4",
